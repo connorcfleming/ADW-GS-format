@@ -1,0 +1,16 @@
+# Netlify build config. It lives in the repo on purpose: netlify.toml overrides whatever
+# is set in the Netlify UI, so the deploy is version-controlled and cannot silently drift
+# the way the UI settings did. Before this file existed, the UI was pointed at a "public"
+# directory that did not exist in the repo, so every git build failed and the live site
+# sat two days stale on an older manual deploy.
+#
+# Why a build command at all, for a static site with no build step: the two pages that
+# ship live in "Oliver Guided Prompt for LP-1/" alongside README.md and PROMPT.md, which
+# are internal notes and must NOT be served publicly. Publishing that folder as-is would
+# put a 58KB decision log on the landing page domain. So the command assembles a clean
+# public/ holding only the two pages, and that is what gets published.
+#
+# public/ is generated at build time and is never committed. See .gitignore.
+[build]
+  publish = "public"
+  command = "mkdir -p public/en && cp 'Oliver Guided Prompt for LP-1/index.html' public/index.html && cp 'Oliver Guided Prompt for LP-1/en/index.html' public/en/index.html"

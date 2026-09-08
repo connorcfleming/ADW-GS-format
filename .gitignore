@@ -1,0 +1,3 @@
+# Assembled by the netlify.toml build command on every deploy. Never commit it:
+# the source of truth is "Oliver Guided Prompt for LP-1/".
+public/
