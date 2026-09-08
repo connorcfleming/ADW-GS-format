@@ -850,7 +850,7 @@ two pages are no longer translations of each other.
 | Problem 1 | "Le das el estimado al cliente y desaparece… cuando ya andas en la yarda con la cuadrilla." |
 | Problem 2 | "Angi y las agencias grandes te venden puros números…" |
 | Problem 3 | "El teléfono lo contestas tú, alguien de la cuadrilla…" |
-| Mechanism H2 | "Así te llenamos la agenda" |
+| Mechanism H2 | "¿Cómo te llenamos la agenda?" (shipped as "Así te llenamos la agenda"; reworded to a question the same day) |
 | Bullets | Four full sentences (see the file) |
 | Objection H2 | "¿Suena demasiado bueno para ser verdad? En la llamada te decimos de frente si esto no es para ti." |
 | CTA button | "Agenda tu llamada" — unchanged |
