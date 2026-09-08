@@ -839,6 +839,40 @@ twice — the second as `content:"\23F0" / ""` — so the empty alt text stops a
 announcing "alarm clock" / "robot" / "pager" ahead of each heading. Both pages were
 re-rendered and all three glyphs resolve in colour, inline, at 1280px.
 
+#### The 2026-09-08 copy pass — the Spanish body copy was replaced wholesale
+
+Supplied as finished copy and shipped verbatim. **Spanish page only** (`index.html`); the
+English page was not part of the instruction and still carries its original wording, so the
+two pages are no longer translations of each other.
+
+| Block | Now reads |
+| --- | --- |
+| Problem 1 | "Le das el estimado al cliente y desaparece… cuando ya andas en la yarda con la cuadrilla." |
+| Problem 2 | "Angi y las agencias grandes te venden puros números…" |
+| Problem 3 | "El teléfono lo contestas tú, alguien de la cuadrilla…" |
+| Mechanism H2 | "Así te llenamos la agenda" |
+| Bullets | Four full sentences (see the file) |
+| Objection H2 | "¿Suena demasiado bueno para ser verdad? En la llamada te decimos de frente si esto no es para ti." |
+| CTA button | "Agenda tu llamada" — unchanged |
+| Risk reversal | "Es gratis y sin compromiso. En la llamada te explicamos las condiciones de la garantía." |
+
+Nothing structural moved: same elements, same classes, same CSS, same order, all of it still
+below the Calendly embed. Only the text nodes changed.
+
+**Three earlier decisions this overrides**, recorded so they are not re-applied by mistake:
+
+1. **The niche is gone from the body.** The mechanism H2 carried the word "landscaping"
+   specifically because the eyebrow that used to hold the niche was deleted, making that H2
+   the only place the niche appeared in the scan path. "Así te llenamos la agenda" drops it,
+   so "landscaping" now survives only in the `<title>` and the meta description. If it should
+   come back into the body, that H2 is where it goes.
+2. **The bullets are sentences now, not fragments.** They were deliberately fragments — the
+   benefit, not the explanation. The new copy writes them out in full.
+3. **"Angi", not "Angie's List".** Shipped as written.
+
+Every copy string quoted elsewhere in this README predates this pass and is historical.
+`index.html` is the live text.
+
 ### (e) Other choices worth naming
 
 - **4 bullets, not 5.** Still inside Oliver's 3-to-5 range. Each is a fragment, not a
