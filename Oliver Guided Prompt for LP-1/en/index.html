@@ -78,9 +78,18 @@ p:last-child{margin-bottom:0}
   font-size:.8125rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
   color:var(--accent);margin:0 0 16px;
 }
+/* El titular sale de la medida, igual que .booking y por la misma razon: al
+   lado de un widget de 1080px, una linea encerrada en los 736px de .wrap se
+   lee chica. Con el mismo ancho que el calendario, titular y calendario
+   comparten escala. En pantallas chicas min() lo devuelve solo al ancho de
+   la ventana, y body ya lleva overflow-x:hidden. */
 h1{
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+  width:min(1080px,calc(100vw - 32px));
   margin:0 0 18px;
-  font-size:clamp(1.875rem,5vw,3.125rem);
+  font-size:clamp(2rem,5.6vw,3.5rem);
   font-weight:800;line-height:1.08;letter-spacing:-.02em;
 }
 h1 .hl{color:var(--accent)}
